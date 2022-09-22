@@ -5,6 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta name="description" content="GDSC Link Tree" />
+        <title>GDSC Link Tree</title>
         <link rel="icon" href="/gdsc-logo.png" />
       </Head>
 
