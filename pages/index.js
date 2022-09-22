@@ -28,11 +28,11 @@ export default function Home() {
             without
             rel="noreferrer"
             target={"_blank"}
-            className={"card hover:border-red-400 hover:text-red-500"}>
+            className={"card ho hover:border-red-400 hover:text-red-500"}>
             <h2>GDSC Community Page</h2>
           </a>
 
-          <div className={"card"}>
+          <div className={"card hover:border-green-400 hover:text-green-500"}>
             <h2>Socials</h2>
             <br />
             <div className="flex w-full justify-evenly">
@@ -76,7 +76,7 @@ export default function Home() {
             without
             rel="noreferrer"
             target={"_blank"}
-            className={"card hover:border-orange-400 hover:text-orange-500"}>
+            className={"card ho hover:border-orange-400 hover:text-orange-500"}>
             <h2>GDSC @ HWU - Sign-Up Form</h2>
           </a>
 
@@ -85,7 +85,7 @@ export default function Home() {
             without
             rel="noreferrer"
             target={"_blank"}
-            className={"card hover:border-blue-400 hover:text-blue-500"}>
+            className={"card ho hover:border-blue-400 hover:text-blue-500"}>
             <h2>Creating your own Web App Series - Playlist</h2>
           </a>
         </div>
