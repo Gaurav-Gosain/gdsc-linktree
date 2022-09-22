@@ -20,7 +20,9 @@ export default function Home() {
           className="w-[80vw] max-w-[400px]"
         />
 
-        <p className={"text-4xl my-10"}>Heriot-Watt University</p>
+        <div className={"my-10 text-2xl md:text-3xl lg:text-6xl"}>
+          Heriot-Watt University
+        </div>
 
         <div className={styles.grid}>
           <a
@@ -41,7 +43,7 @@ export default function Home() {
                 without
                 rel="noreferrer"
                 target={"_blank"}
-                className="hover:text-pink-500 hover:scale-110 hover:duration-150 p-4 rounded-full bg-[#fcfdfa88]">
+                className="text-black hover:text-pink-500 hover:scale-110 hover:duration-150 p-4 rounded-full bg-[#fcfdfa88]">
                 <SiInstagram fontSize={"35px"} />
               </a>
               <a
@@ -49,7 +51,7 @@ export default function Home() {
                 without
                 rel="noreferrer"
                 target={"_blank"}
-                className="hover:text-red-500 hover:scale-110 hover:duration-150 p-4 rounded-full bg-[#fcfdfa88]">
+                className="text-black hover:text-red-500 hover:scale-110 hover:duration-150 p-4 rounded-full bg-[#fcfdfa88]">
                 <SiYoutube fontSize={"35px"} />
               </a>
               <a
@@ -57,7 +59,7 @@ export default function Home() {
                 without
                 rel="noreferrer"
                 target={"_blank"}
-                className="hover:text-blue-800 hover:scale-110 hover:duration-150 p-4 rounded-full bg-[#fcfdfa88]">
+                className="text-black hover:text-blue-500 hover:scale-110 hover:duration-150 p-4 rounded-full bg-[#fcfdfa88]">
                 <SiTwitter fontSize={"35px"} />
               </a>
               <a
@@ -65,7 +67,7 @@ export default function Home() {
                 without
                 rel="noreferrer"
                 target={"_blank"}
-                className="hover:text-purple-500 hover:scale-110 hover:duration-150 p-4 rounded-full bg-[#fcfdfa88]">
+                className="text-black hover:text-purple-500 hover:scale-110 hover:duration-150 p-4 rounded-full bg-[#fcfdfa88]">
                 <SiLinkedin fontSize={"35px"} />
               </a>
             </div>
