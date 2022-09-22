@@ -1,6 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/future/image";
+import styles from "../styles/Home.module.css";
+import { SiInstagram, SiYoutube, SiTwitter, SiLinkedin } from "react-icons/si";
 
 export default function Home() {
   return (
@@ -12,42 +13,66 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <Image
+          src="/gdsclogo.png"
+          alt="Google Developer Student Clubs Logo"
+          width={400}
+          height={400}
+        />
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+        <p className={"text-4xl my-10"}>Heriot-Watt University</p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a
+            href="https://gdsc.community.dev/heriot-watt-university/"
+            target={"_blank"}
+            className={"card hover:border-red-400 hover:text-red-500"}>
+            <h2>GDSC Community Page</h2>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <div className={"card"}>
+            <h2>Socials</h2>
+            <br />
+            <div className="flex w-full justify-evenly">
+              <a
+                href="https://instagram.com/gdsc_hwu?igshid=YmMyMTA2M2Y="
+                target={"_blank"}
+                className="hover:text-pink-500 hover:scale-110 hover:duration-150 p-4 rounded-full bg-[#fcfdfa88]">
+                <SiInstagram fontSize={"35px"} />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UC8jF4bov22bDnf9pClPigvg"
+                target={"_blank"}
+                className="hover:text-red-500 hover:scale-110 hover:duration-150 p-4 rounded-full bg-[#fcfdfa88]">
+                <SiYoutube fontSize={"35px"} />
+              </a>
+              <a
+                href="https://twitter.com/gdsc_hwu"
+                target={"_blank"}
+                className="hover:text-blue-800 hover:scale-110 hover:duration-150 p-4 rounded-full bg-[#fcfdfa88]">
+                <SiTwitter fontSize={"35px"} />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/gdsc-hwu"
+                target={"_blank"}
+                className="hover:text-purple-500 hover:scale-110 hover:duration-150 p-4 rounded-full bg-[#fcfdfa88]">
+                <SiLinkedin fontSize={"35px"} />
+              </a>
+            </div>
+          </div>
+
+          <a
+            href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQVOwVpUMkhKQjFUR1NCWFVPUlhSUDRQNThKMUNEVC4u"
+            target={"_blank"}
+            className={"card hover:border-orange-400 hover:text-orange-500"}>
+            <h2>GDSC @ HWU - Sign-Up Form</h2>
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+            href="https://youtube.com/playlist?list=PLYlB334TcbXGVBqG-7m_udB-QTWQXYCf8"
+            target={"_blank"}
+            className={"card hover:border-blue-400 hover:text-blue-500"}>
+            <h2>Creating your own Web App Series - Playlist</h2>
           </a>
         </div>
       </main>
@@ -56,14 +81,13 @@ export default function Home() {
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
+          rel="noopener noreferrer">
+          Powered by{" "}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
     </div>
-  )
+  );
 }
