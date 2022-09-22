@@ -43,6 +43,8 @@ export default function Home() {
                 without
                 rel="noreferrer"
                 target={"_blank"}
+                title="Instagram"
+                aria-label="Instagram"
                 className="text-black hover:text-pink-500 hover:scale-110 hover:duration-150 p-4 rounded-full bg-[#fcfdfa88]">
                 <SiInstagram fontSize={"35px"} />
               </a>
@@ -51,6 +53,8 @@ export default function Home() {
                 without
                 rel="noreferrer"
                 target={"_blank"}
+                title="Youtube"
+                aria-label="Youtube"
                 className="text-black hover:text-red-500 hover:scale-110 hover:duration-150 p-4 rounded-full bg-[#fcfdfa88]">
                 <SiYoutube fontSize={"35px"} />
               </a>
@@ -59,6 +63,8 @@ export default function Home() {
                 without
                 rel="noreferrer"
                 target={"_blank"}
+                title="Twitter"
+                aria-label="Twitter"
                 className="text-black hover:text-blue-500 hover:scale-110 hover:duration-150 p-4 rounded-full bg-[#fcfdfa88]">
                 <SiTwitter fontSize={"35px"} />
               </a>
@@ -67,6 +73,8 @@ export default function Home() {
                 without
                 rel="noreferrer"
                 target={"_blank"}
+                title="Linkedin"
+                aria-label="Linkedin"
                 className="text-black hover:text-purple-500 hover:scale-110 hover:duration-150 p-4 rounded-full bg-[#fcfdfa88]">
                 <SiLinkedin fontSize={"35px"} />
               </a>
