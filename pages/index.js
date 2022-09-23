@@ -259,10 +259,9 @@ export default function Home() {
             color={""}
           />
 
-          {links.map((link) => (
-            <LinkTreeTag {...link} />
+          {links.map((link, index) => (
+            <LinkTreeTag key={index} {...link} />
           ))}
-          
         </div>
       </main>
     </div>
