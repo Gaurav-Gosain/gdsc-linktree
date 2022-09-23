@@ -191,9 +191,17 @@ export default function Home() {
       </div>
 
       <main className="min-h-screen px-16 flex-1 flex flex-col justify-center items-center">
-        {theme && (
+        {theme === "light" ? (
           <Image
-            src={theme === "light" ? "/gdsclogo.png" : "/gdsclogo_dark.png"}
+            src={"/gdsclogo.png"}
+            alt="Google Developer Student Clubs Logo"
+            width={400}
+            height={107.5}
+            className="w-[80vw] max-w-[400px] mt-14 md:mt-10"
+          />
+        ) : (
+          <Image
+            src={"/gdsclogo_dark.png"}
             alt="Google Developer Student Clubs Logo"
             width={400}
             height={107.5}
