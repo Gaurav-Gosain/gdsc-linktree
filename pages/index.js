@@ -137,8 +137,10 @@ export default function Home() {
         target={"_blank"}
         title={title}
         aria-label={title}
-        className={`p-4 rounded-full bg-slate-100 dark:hover:bg-[#141414] dark:bg-[#444] text-inherit ${color}`}>
+        className={`tooltip flex justify-center items-center my-4 p-4 rounded-full bg-slate-100 dark:hover:bg-[#141414] dark:bg-[#444] text-inherit ${color}`}>
         <Icon fontSize={"35px"} />
+        <h3 className="md:hidden ml-4 text-2xl">{title}</h3>
+        <span class="tooltiptext">{title}</span>
       </motion.a>
     );
   };
@@ -194,7 +196,7 @@ export default function Home() {
           alt="Google Developer Student Clubs Logo"
           width={400}
           height={107.5}
-          className="w-[80vw] max-w-[400px]"
+          className="w-[80vw] max-w-[400px] mt-14 md:mt-10"
         />
 
         <div
