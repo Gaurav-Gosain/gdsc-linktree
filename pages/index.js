@@ -211,7 +211,7 @@ export default function Home() {
 
         <div
           className={
-            "my-10 text-center text-3xl font-thin md:text-4xl lg:text-6xl dark:text-slate-300 text-gray-600 tracking-wider"
+            "my-10 text-center text-3xl font-medium md:text-4xl lg:text-6xl dark:text-slate-300 text-gray-600 tracking-wider"
           }>
           Heriot-Watt University
         </div>
