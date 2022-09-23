@@ -124,6 +124,8 @@ export default function Home() {
 
     return (
       <motion.button
+        aria-label="Dark Mode Toggle"
+        value={theme}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
