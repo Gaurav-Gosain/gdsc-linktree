@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
+import links from "../config.json";
+
 export default function Home() {
   const { theme } = useTheme();
 
@@ -216,12 +218,6 @@ export default function Home() {
 
         <div className="flex items-center flex-wrap flex-col min-w-[80vw]">
           <LinkTreeTag
-            href="https://gdsc.community.dev/heriot-watt-university/"
-            content={<h2>GDSC Community Page</h2>}
-            color={"red"}
-          />
-
-          <LinkTreeTag
             href={null}
             content={
               <>
@@ -263,21 +259,10 @@ export default function Home() {
             color={""}
           />
 
-          <LinkTreeTag
-            href={
-              "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQVOwVpUMkhKQjFUR1NCWFVPUlhSUDRQNThKMUNEVC4u"
-            }
-            content={<h2>GDSC @ HWU - Sign-Up Form</h2>}
-            color={"orange"}
-          />
-
-          <LinkTreeTag
-            href={
-              "https://youtube.com/playlist?list=PLYlB334TcbXGVBqG-7m_udB-QTWQXYCf8"
-            }
-            content={<h2>Creating your own Web App Series - Playlist</h2>}
-            color={"blue"}
-          />
+          {links.map((link) => (
+            <LinkTreeTag {...link} />
+          ))}
+          
         </div>
       </main>
     </div>
