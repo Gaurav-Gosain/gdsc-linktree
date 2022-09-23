@@ -68,7 +68,11 @@ export default function Home() {
           className="w-[80vw] max-w-[400px]"
         />
 
-        <div className={"my-10 text-2xl md:text-3xl lg:text-6xl"}>
+        <div
+          className={"my-10 text-2xl font-bold md:text-3xl lg:text-6xl"}
+          style={{
+            color: "#6c7278dd",
+          }}>
           Heriot-Watt University
         </div>
 
