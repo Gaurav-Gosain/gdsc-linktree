@@ -6,6 +6,8 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
 export default function Home() {
+  const { theme } = useTheme();
+
   const transition = {
     type: "spring",
     stiffness: 200,
@@ -107,6 +109,8 @@ export default function Home() {
     );
   };
 
+  const [refresh, setRefresh] = useState(0);
+
   const DarkModeToggle = () => {
     const { theme, setTheme } = useTheme();
 
@@ -127,6 +131,10 @@ export default function Home() {
     );
   };
 
+  useEffect(() => {
+    setRefresh(refresh + 1);
+  }, [theme]);
+
   const SocialMediaButton = ({ href, title, color, Icon }) => {
     return (
       <motion.a
@@ -140,7 +148,7 @@ export default function Home() {
         className={`tooltip flex justify-center items-center my-4 p-4 rounded-full bg-slate-100 dark:hover:bg-[#141414] dark:bg-[#444] text-inherit ${color}`}>
         <Icon fontSize={"35px"} />
         <h3 className="md:hidden ml-4 text-2xl">{title}</h3>
-        <span class="tooltiptext">{title}</span>
+        <span className="tooltiptext">{title}</span>
       </motion.a>
     );
   };
@@ -176,8 +184,6 @@ export default function Home() {
     );
   };
 
-  const { theme, setTheme } = useTheme();
-
   return (
     <div>
       <Head>
@@ -191,7 +197,7 @@ export default function Home() {
       </div>
 
       <main className="min-h-screen px-16 flex-1 flex flex-col justify-center items-center">
-        {theme === "light" ? (
+        {refresh && theme === "light" ? (
           <Image
             src={"/gdsclogo.png"}
             alt="Google Developer Student Clubs Logo"
