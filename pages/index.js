@@ -109,7 +109,7 @@ export default function Home() {
     );
   };
 
-  const [refresh, setRefresh] = useState(0);
+  const [url, setUrl] = useState("/gdsclogo.png");
 
   const DarkModeToggle = () => {
     const { theme, setTheme } = useTheme();
@@ -132,7 +132,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    setRefresh(refresh + 1);
+    theme === "light" ? setUrl("/gdsclogo.png") : setUrl("/gdsclogo_dark.png");
   }, [theme]);
 
   const SocialMediaButton = ({ href, title, color, Icon }) => {
@@ -197,17 +197,9 @@ export default function Home() {
       </div>
 
       <main className="min-h-screen px-16 flex-1 flex flex-col justify-center items-center">
-        {refresh && theme === "light" ? (
+        {url && (
           <Image
-            src={"/gdsclogo.png"}
-            alt="Google Developer Student Clubs Logo"
-            width={400}
-            height={107.5}
-            className="w-[80vw] max-w-[400px] mt-14 md:mt-10"
-          />
-        ) : (
-          <Image
-            src={"/gdsclogo_dark.png"}
+            src={url}
             alt="Google Developer Student Clubs Logo"
             width={400}
             height={107.5}
