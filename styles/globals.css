@@ -36,14 +36,30 @@ a {
   width: 80vw;
 }
 
-.ho:hover,
-.ho:focus,
-.ho:active  {
-  scale: 1.1;
-  transition: 0.2s ease-in-out;
-
-}
-
 .card h2 {
   font-size: 1.5rem;
+}
+
+.red {
+  @apply hover:border-red-500 hover:text-red-500
+}
+
+.pink {
+  @apply hover:border-pink-500 hover:text-pink-500
+}
+
+.green {
+  @apply hover:border-green-500 hover:text-green-500
+}
+
+.blue {
+  @apply hover:border-blue-500 hover:text-blue-500
+}
+
+.purple {
+  @apply hover:border-purple-500 hover:text-purple-500
+}
+
+.orange {
+  @apply hover:border-orange-500 hover:text-orange-500
 }
