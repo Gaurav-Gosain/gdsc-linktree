@@ -193,7 +193,7 @@ export default function Home() {
           src={theme === "light" ? "/gdsclogo.png" : "/gdsclogo_dark.png"}
           alt="Google Developer Student Clubs Logo"
           width={400}
-          height={400}
+          height={107.5}
           className="w-[80vw] max-w-[400px]"
         />
 
