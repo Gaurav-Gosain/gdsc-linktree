@@ -252,7 +252,7 @@ export default function Home() {
                   <SocialMediaButton
                     href={"https://www.linkedin.com/company/gdsc-hwu/"}
                     title={"Linkedin"}
-                    color={"purple"}
+                    color={"linkedin"}
                     Icon={SiLinkedin}
                   />
                 </div>
